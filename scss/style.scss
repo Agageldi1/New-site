@@ -1,0 +1,433 @@
+@font-face {
+  font-family: "empirial";
+  font-display: swap;
+  src: url("../fonts/Walkway\ rounded.woff2") format(woff)
+    url("../fonts/Walkway\ rounded.woff2") format("woff2");
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap");
+
+$maxwidth: 1920;
+$minwidth: 320;
+$maxwidthContainer: 1150;
+$md1: $maxwidthContainer + 12;
+$md2: 992;
+$md3: 768.98;
+$md4: 485.98;
+li {
+  list-style: none;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container1 {
+  max-width: $maxwidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+.container2 {
+  max-width: $maxwidth;
+}
+.header {
+  background: url("../img/header/depositphotos_52582287-stock-photo-dark-alley-at-night-in.jpg")
+    0 0/100% 100% no-repeat fixed;
+  &__logo {
+    font-family: Walkway;
+    font-size: 35px;
+    line-height: 30px;
+    color: #ffffff;
+    & span {
+      color: #0199e6;
+    }
+  }
+  &__title {
+    font-family: Raleway;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #ffffff;
+    & span {
+      font-weight: 700;
+      color: #0199e6;
+    }
+    @media (max-width: $md3+px) {
+      font-size: 30px;
+    }
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    @media (max-width: $md3+px) {
+      font-size: 15px;
+    }
+  }
+  &__register {
+    padding-bottom: 210px;
+  }
+  &__start {
+  }
+}
+.header-register__block {
+  padding: 23px 25px;
+  background: #000;
+}
+.first__name {
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(1, 153, 230, 0.29);
+  box-shadow: -3px 0px 0px 0px #0199e6;
+
+  @media (max-width: $md3+px) {
+    margin-bottom: 20px;
+  }
+}
+.your__email {
+  position: relative;
+  z-index: 2;
+  @media (max-width: $md3+px) {
+    margin-bottom: 20px;
+  }
+}
+.phone__number {
+  border: 1px solid rgba(1, 153, 230, 0.29);
+  box-shadow: -3px 0px 0px 0px #0199e6;
+  @media (max-width: $md4+px) {
+    margin-bottom: 20px;
+  }
+}
+.explore {
+  &__logo {
+    padding: 0px 12px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  &__text {
+    padding-left: 20px;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+    & span {
+      font-family: Raleway;
+      font-weight: 700;
+      color: #323232;
+    }
+    @media (max-width: $md3+px) {
+      font-size: 14px;
+    }
+  }
+  &__title {
+    font-family: Raleway;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #323232;
+    @media (max-width: $md3+px) {
+      font-size: 25px;
+    }
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+    @media (max-width: $md3+px) {
+      font-size: 14px;
+    }
+  }
+  &__block {
+    margin-bottom: 100px;
+    & img {
+      width: 100%;
+    }
+  }
+  &__block2 {
+  }
+}
+.features {
+  &__title {
+    font-family: Raleway;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 500;
+    color: #323232;
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+  }
+  &__label {
+    font-family: Raleway;
+    font-size: 20px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #323232;
+  }
+  &__text {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #727272;
+  }
+}
+.pricing {
+  &__title {
+    font-family: Raleway;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 500;
+    color: #323232;
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+  }
+}
+.cart {
+  &__li {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #323232;
+    li {
+      border-top: 2px dotted #ededed;
+    }
+  }
+  &__top {
+  }
+  img {
+  }
+  &__image {
+    position: relative;
+    top: 30px;
+  }
+}
+.cart-top__title {
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 65px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.cart-top__subtitle {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  line-height: 65px;
+  font-weight: 400;
+  color: #ffffff;
+  span {
+    font-weight: 700;
+    color: #0199e6;
+  }
+}
+.cart__bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.cart-li__last {
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 64px;
+  font-weight: 700;
+  @media (max-width: $md4+px) {
+    font-size: 14px;
+  }
+}
+.video {
+  &__title {
+    font-family: Raleway;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 500;
+    color: #323232;
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+  }
+  &__li {
+    display: flex;
+    li {
+      margin: 0px 50px 0 50px;
+      font-family: Raleway;
+      color: #323232;
+    }
+    span {
+      font-family: "landx - font - icons";
+      font-size: 18px;
+      line-height: 64px;
+      font-weight: 700;
+      color: #0199e6;
+    }
+    justify-content: center;
+    @media (max-width: $md4+px) {
+      display: block;
+    }
+  }
+}
+.slider {
+  &__container {
+    overflow: hidden;
+    display: flex;
+  }
+  &__track {
+    display: flex;
+    transition: 2s;
+  }
+  &__item {
+    img {
+      width: 100%;
+      margin-left: 35px;
+    }
+  }
+  &__buttons {
+    text-align: center;
+  }
+  &__title {
+    font-family: Raleway;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 500;
+    color: #323232;
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+  }
+}
+.btn__next {
+  position: absolute;
+}
+.comments {
+  &__logos {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.comment {
+  &__title {
+    font-family: "Source Sans Pro - It";
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+    background: #f7f8fa;
+    padding: 35px;
+  }
+  &__label {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #0199e6;
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #727272;
+  }
+  &__dot {
+    display: none;
+    width: 30px;
+    border: 3px solid #fff;
+    box-shadow: 1px #000;
+    border-radius: 5px;
+    position: absolute;
+  }
+}
+.help {
+  background: url("../img/icons/rectangle_5_2240.png");
+  &__title {
+    font-family: Raleway;
+    font-size: 20px;
+    line-height: 65px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  &__subtitle {
+    font-family: Raleway;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  &__button {
+    margin-bottom: 135px;
+  }
+}
+.footer {
+  &__bottom {
+    background: #f7f8fa;
+  }
+}
+.footer-top {
+  &__title {
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 65px;
+    font-weight: 600;
+    color: #323232;
+  }
+  &__link {
+    font-family: Raleway;
+    font-weight: 700;
+  }
+}
+.footer-bottom {
+  background: #f7f8fa;
+  &__title {
+    font-family: Walkway;
+    font-size: 35px;
+    line-height: 29px;
+    font-weight: 900;
+    color: #323232;
+
+    span {
+      font-weight: 700;
+      color: #0199e6;
+    }
+  }
+  &__subtitle {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #919191;
+  }
+}
